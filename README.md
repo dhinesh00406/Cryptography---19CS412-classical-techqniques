@@ -30,7 +30,7 @@ Implementation using C or pyhton code
 
 
 ## PROGRAM:
-
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -95,10 +95,12 @@ int main() {
 
     return 0;
 }
+```
 
 
 ## OUTPUT:
-![Screenshot 2024-10-14 091023](https://github.com/user-attachments/assets/13b75117-2d6d-44bc-a192-4d7ac184bae2)
+![Screenshot 2024-10-14 091023](https://github.com/user-attachments/assets/f241e403-6122-4639-bfb0-eaa68822381b)
+
 
 ## RESULT:
 The program is executed successfully
@@ -143,6 +145,7 @@ To decrypt, use the INVERSE (opposite) of the last 3 rules, and the 1st as-is (d
 
 
 ## PROGRAM:
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -298,9 +301,11 @@ printf("Cipher text: %s\n", str);
 
 return 0;
 }
+```
 
 ## OUTPUT:
-![Screenshot 2024-10-14 092117](https://github.com/user-attachments/assets/032e9381-809b-4bfe-b3ec-dd03d8b3868c)
+![Screenshot 2024-10-14 092117](https://github.com/user-attachments/assets/e5cd09b3-8ab8-40d8-89d7-b8a51df4f4ee)
+
 
 ## RESULT:
 The program is executed successfully
@@ -335,7 +340,7 @@ The cipher can, be adapted to an alphabet with any number of letters. All arithm
 
 
 ## PROGRAM:
-PROGRAM:
+```c
 #include <stdio.h> #include <string.h>
 int keymat[3][3] = { { 1, 2, 1 }, { 2, 3, 2 }, { 2, 2, 1 } };
 int invkeymat[3][3] = { { -1, 0, 1 }, { 2, -1, 0 }, { -2, 2, -1 } }; char key[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -380,13 +385,12 @@ strcat(dec, decode(a, b, c));
 }
 printf("Decoded message : %s\n", dec); return 0;
 }
-
+```
 
 ## OUTPUT:
-![Screenshot 2024-10-14 092441](https://github.com/user-attachments/assets/93ef77a8-aa78-4cb2-9ce8-126a51888269)
+![Screenshot 2024-10-14 092441](https://github.com/user-attachments/assets/e355ff1d-dd4b-441b-9e4c-95ab8b32fb73)
 
-Input Message : SecurityLaboratory
-Padded Message : SECURITYLABORATORY Encrypted Message : EACSDKLCAEFQDUKSXU Decrypted Message : SECURITYLABORATORY
+
 ## RESULT:
 The program is executed successfully
 
@@ -450,7 +454,8 @@ char message[]= "Thisisasecretmessage.";//Replace withyourmessage
 //Decrypt themessage backtotheoriginal vigenereDecrypt(message,key); printf("DecryptedMessage:%s\n",message); Return 0;
 
 ## OUTPUT:
-![Screenshot 2024-10-14 092717](https://github.com/user-attachments/assets/b3e20f8d-4a1d-431d-aeeb-1a48fa45e593)
+
+![Screenshot 2024-10-14 092717](https://github.com/user-attachments/assets/737c2705-920e-4b24-9d6e-0348047d3816)
 
 ## RESULT:
 The program is executed successfully
@@ -481,7 +486,7 @@ ALGORITHM DESCRIPTION:
 In the rail fence cipher, the plaintext is written downwards and diagonally on successive "rails" of an imaginary fence, then moving up when we reach the bottom rail. When we reach the top rail, the message is written downwards again until the whole plaintext is written out. The message is then read off in rows.
 
 ## PROGRAM:
-
+```c
 PROGRAM:
 #include<stdio.h> #include<string.h> #include<stdlib.h> main()
 {
@@ -528,8 +533,11 @@ if(code[i][j]!=0) printf("%c",code[i][j]);
 }
 printf("\n");
 }
+```
 ## OUTPUT:
-![Screenshot 2024-10-14 092919](https://github.com/user-attachments/assets/ae0a9aa6-e3b5-49e8-8f76-a79d647774bb)
+![Screenshot 2024-10-14 092919](https://github.com/user-attachments/assets/442e32e1-c3b1-4e7e-a610-c9042d4c5c0b)
+
+
 
 ## RESULT:
 The program is executed successfully
