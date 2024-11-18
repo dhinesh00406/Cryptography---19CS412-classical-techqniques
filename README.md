@@ -422,7 +422,7 @@ The Vigenere cipher is a method of encrypting alphabetic text by using a series 
 
 
 ## PROGRAM:
-PROGRAM:
+```c
 #include<stdio.h> #include<string.h>
 //FunctiontoperformVigenereencryption voidvigenereEncrypt(char*text,constchar*key){ inttextLen= strlen(text);
 intkeyLen=strlen(key); for(inti =0;i< textLen;i++){ charc =text[i]; if(c>='A'&&c<='Z'){
@@ -452,7 +452,7 @@ constchar *key="KEY";//Replacewithyourdesired key
 char message[]= "Thisisasecretmessage.";//Replace withyourmessage
 //Encrypt themessage vigenereEncrypt(message,key); printf("EncryptedMessage:%s\n",message);
 //Decrypt themessage backtotheoriginal vigenereDecrypt(message,key); printf("DecryptedMessage:%s\n",message); Return 0;
-
+```
 ## OUTPUT:
 
 ![Screenshot 2024-10-14 092717](https://github.com/user-attachments/assets/737c2705-920e-4b24-9d6e-0348047d3816)
